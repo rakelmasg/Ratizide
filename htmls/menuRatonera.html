@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+<meta name="author" content="Raquel Mas García">
+<title>Ratizide</title>
+<!-- añadimos un icono para la pestaña-->
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<!-- añadimos bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- añadimos JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- añadimos el CSS-->
+<link type="text/css" rel="stylesheet" href="../css/styleRatonera.css"/>
+
+</head>
+<body>
+	<!-- envoltorio para centrar el contenido-->
+	<div id="menu" class="wrapper">		
+		<div id="botones_menu" >
+			<input type='button' class='boton' value='1 JUGADOR' onClick="location.href='juego_1J.html'" 
+				style="background: url('../img/boton.png') left center no-repeat; background-size:cover; "/>
+			
+			<input type='button' class='boton' value='2 JUGADORES' onClick="location.href='juego_2J.html'" 
+				style="background: url('../img/boton.png') left center no-repeat; background-size:cover; "/>
+			
+			<input type='button' class='boton' value='PUNTUACIONES' onClick="location.href='puntuaciones.html'" 
+				style="background: url('../img/boton.png') left center no-repeat; background-size:cover; "/>
+			
+			<input type='button' class='boton' value='CREDITOS' onClick="location.href='creditos.html'" 
+				style="background: url('../img/boton.png') left center no-repeat; background-size:cover; "/>
+		</div>		
+	</div>
+	
+	<!-- añadimos los audios en diferentes formatos para su correcta reproducción en todos navegadores-->
+	<!-- hacemos que la banda sonora se reproduzca automaticamente y en bucle-->
+	<audio id = "musica" autoplay = "true" loop = "true">
+		<source src = "../audio/musica_menu.mp3"></source>
+		<source src = "../audio/musica_menu.ogg"></source>
+		<source src = "../audio/musica_menu.wav"></source>
+	</audio>
+
+</body>
+</html>
